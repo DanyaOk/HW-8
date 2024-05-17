@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.Arrays;
 
 public class Main {
@@ -7,20 +8,33 @@ public class Main {
        klass[0]=1;
        klass[1]=2;
         klass[2] = 3;
-        for (int index =0; index< klass.length; index++
-        ) {
-            if (index== klass.length-1){
-                System.out.print(klass[index]);
-                break;
+        for (int i = klass.length-1; i>=0; i--) {
+            System.out.print(klass[i]+", ");
+        }
+        System.out.println();
+        for (int i=0; i < klass.length; i++ ) {
+            if (klass[i]%2==1) {
+                System.out.print(klass[i]+1+" ");
+            } else {
+                System.out.print(klass[i]+" ");
+
             }
-            System.out.print(klass[index] + ", ");
         }
         System.out.println();
 
+
+
+
         double [] box={1.57,7.654,9.986};
-
+        for (int i = box.length-1; i>=0; i--) {
+            System.out.print(box[i]+", ");
+        }
+        System.out.println();
 int [] fear= new int[23];
-
+        for (int i = fear.length-1; i>=0; i--) {
+            System.out.print(fear[i]+", ");
+        }
+        System.out.println();
         System.out.print(Arrays.toString(klass));
         System.out.println();
         System.out.print(Arrays.toString(box));
@@ -28,21 +42,10 @@ int [] fear= new int[23];
         System.out.print(Arrays.toString(fear));
         System.out.println();
 
- int [] groot = new int[6];
- groot[0]=1;
- groot[1]=2;
- groot[2]=3;
- groot[3]=4;
- groot[4]=5;
- groot[5]=6;
-  for (int i=0; i< groot.length; i++) {
-if (i == groot.length-1)  {
-    {
-    System.out.print(groot[i]);
-    break;
-}}
-     System.out.print(groot[i]+", ");
- }
+
+
+
+
 
 
 
